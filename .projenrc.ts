@@ -80,4 +80,3 @@ const mkdir = (relativePath: string) => {
 mkdir(project.docsDirectory);
 
 project.synth();
-
