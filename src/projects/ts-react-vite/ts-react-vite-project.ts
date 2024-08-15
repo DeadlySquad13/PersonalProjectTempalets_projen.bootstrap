@@ -111,6 +111,7 @@ export function deepMerge(
 export interface ViteProjectOptions extends TypeScriptProjectOptions {}
 
 class ViteConfig extends FileBase {
+  // eslint-disable-next-line no-unused-vars
   protected synthesizeContent(_resolver: IResolver): string | undefined {
     return [
       "import { defineConfig } from 'vite'",
