@@ -36,9 +36,9 @@ const project = new cdk.JsiiProject({
   //     allowedUsernames: ["DeadlySquad13-automation"],
   // },
 
-  deps: ["projen@0.65.13"],
-  peerDeps: ["projen@0.65.13"],
-  devDeps: ["@typescript-eslint/parser"],
+  deps: ["projen@^0.81.15"],
+  peerDeps: ["projen@^0.81.15"],
+  devDeps: ["projen@^0.81.15", "@typescript-eslint/parser"],
 
   docsDirectory: DOCS_ROOT,
   docgenFilePath: `${DOCS_ROOT}/API.md`,
