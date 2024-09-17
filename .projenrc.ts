@@ -36,8 +36,8 @@ const project = new cdk.JsiiProject({
   //     allowedUsernames: ["DeadlySquad13-automation"],
   // },
 
-  deps: ["projen@^0.81.17"],
-  peerDeps: ["projen@^0.81.17"],
+  deps: ["projen@^0.87.3"],
+  peerDeps: ["projen@^0.87.3"],
   devDeps: ["@typescript-eslint/parser"],
 
   gitignore: [
