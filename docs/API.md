@@ -74,7 +74,7 @@ Returns a string representation of this construct.
 ##### `addExcludeFromCleanup` <a name="addExcludeFromCleanup" id="projen-python-project.RepoAnalyzerPython.addExcludeFromCleanup"></a>
 
 ```typescript
-public addExcludeFromCleanup(globs: string): void
+public addExcludeFromCleanup(globs: ...string[]): void
 ```
 
 Exclude the matching files from pre-synth cleanup.
@@ -84,7 +84,7 @@ source files include the projen marker and we don't want them to be erased durin
 
 ###### `globs`<sup>Required</sup> <a name="globs" id="projen-python-project.RepoAnalyzerPython.addExcludeFromCleanup.parameter.globs"></a>
 
-- *Type:* string
+- *Type:* ...string[]
 
 The glob patterns to match.
 
@@ -340,7 +340,7 @@ public addBins(bins: {[ key: string ]: string}): void
 ##### `addBundledDeps` <a name="addBundledDeps" id="projen-python-project.RepoAnalyzerPython.addBundledDeps"></a>
 
 ```typescript
-public addBundledDeps(deps: string): void
+public addBundledDeps(deps: ...string[]): void
 ```
 
 Defines bundled dependencies.
@@ -350,7 +350,7 @@ Bundled dependencies will be added as normal dependencies as well as to the
 
 ###### `deps`<sup>Required</sup> <a name="deps" id="projen-python-project.RepoAnalyzerPython.addBundledDeps.parameter.deps"></a>
 
-- *Type:* string
+- *Type:* ...string[]
 
 Names modules to install.
 
@@ -365,28 +365,28 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 ##### ~~`addCompileCommand`~~ <a name="addCompileCommand" id="projen-python-project.RepoAnalyzerPython.addCompileCommand"></a>
 
 ```typescript
-public addCompileCommand(commands: string): void
+public addCompileCommand(commands: ...string[]): void
 ```
 
 DEPRECATED.
 
 ###### `commands`<sup>Required</sup> <a name="commands" id="projen-python-project.RepoAnalyzerPython.addCompileCommand.parameter.commands"></a>
 
-- *Type:* string
+- *Type:* ...string[]
 
 ---
 
 ##### `addDeps` <a name="addDeps" id="projen-python-project.RepoAnalyzerPython.addDeps"></a>
 
 ```typescript
-public addDeps(deps: string): void
+public addDeps(deps: ...string[]): void
 ```
 
 Defines normal dependencies.
 
 ###### `deps`<sup>Required</sup> <a name="deps" id="projen-python-project.RepoAnalyzerPython.addDeps.parameter.deps"></a>
 
-- *Type:* string
+- *Type:* ...string[]
 
 Names modules to install.
 
@@ -401,14 +401,14 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 ##### `addDevDeps` <a name="addDevDeps" id="projen-python-project.RepoAnalyzerPython.addDevDeps"></a>
 
 ```typescript
-public addDevDeps(deps: string): void
+public addDevDeps(deps: ...string[]): void
 ```
 
 Defines development/test dependencies.
 
 ###### `deps`<sup>Required</sup> <a name="deps" id="projen-python-project.RepoAnalyzerPython.addDevDeps.parameter.deps"></a>
 
-- *Type:* string
+- *Type:* ...string[]
 
 Names modules to install.
 
@@ -439,14 +439,14 @@ The fields to set.
 ##### `addKeywords` <a name="addKeywords" id="projen-python-project.RepoAnalyzerPython.addKeywords"></a>
 
 ```typescript
-public addKeywords(keywords: string): void
+public addKeywords(keywords: ...string[]): void
 ```
 
 Adds keywords to package.json (deduplicated).
 
 ###### `keywords`<sup>Required</sup> <a name="keywords" id="projen-python-project.RepoAnalyzerPython.addKeywords.parameter.keywords"></a>
 
-- *Type:* string
+- *Type:* ...string[]
 
 The keywords to add.
 
@@ -455,7 +455,7 @@ The keywords to add.
 ##### `addPeerDeps` <a name="addPeerDeps" id="projen-python-project.RepoAnalyzerPython.addPeerDeps"></a>
 
 ```typescript
-public addPeerDeps(deps: string): void
+public addPeerDeps(deps: ...string[]): void
 ```
 
 Defines peer dependencies.
@@ -466,7 +466,7 @@ your code against the minimum version required from your consumers.
 
 ###### `deps`<sup>Required</sup> <a name="deps" id="projen-python-project.RepoAnalyzerPython.addPeerDeps.parameter.deps"></a>
 
-- *Type:* string
+- *Type:* ...string[]
 
 Names modules to install.
 
@@ -497,14 +497,14 @@ The scripts to set.
 ##### ~~`addTestCommand`~~ <a name="addTestCommand" id="projen-python-project.RepoAnalyzerPython.addTestCommand"></a>
 
 ```typescript
-public addTestCommand(commands: string): void
+public addTestCommand(commands: ...string[]): void
 ```
 
 DEPRECATED.
 
 ###### `commands`<sup>Required</sup> <a name="commands" id="projen-python-project.RepoAnalyzerPython.addTestCommand.parameter.commands"></a>
 
-- *Type:* string
+- *Type:* ...string[]
 
 ---
 
