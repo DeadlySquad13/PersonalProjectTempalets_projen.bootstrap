@@ -7,11 +7,12 @@ const DOCS_ROOT = "docs";
 const project = new cdk.JsiiProject({
   author: "DeadlySquad13",
   authorAddress: "46250621+DeadlySquad13@users.noreply.github.com",
-  name: "projen-python-project",
-  packageName: "projen-python-project" /* The "name" in package.json. */,
-  repositoryUrl: "https://github.com/RepoAnalyzer/projen-python-project.git",
+  name: "@dsomega-boostrap/projen",
+  packageName: "@dsomega-boostrap/projen" /* The "name" in package.json. */,
+  repositoryUrl:
+    "https://github.com/DeadlySquad13/PersonalProjectTemplates_projen.bootstrap",
   description:
-    "Projen project type for Repo Analyzer python projects" /* The description is just a string that helps people understand the purpose of the package. */,
+    "Projen project types for easy project bootstrapping" /* The description is just a string that helps people understand the purpose of the package. */,
   keywords: [
     // Directly related.
     "python",
@@ -19,7 +20,6 @@ const project = new cdk.JsiiProject({
     "project",
     "template",
     // Child of.
-    "repo analyzer",
     "sdk",
     "constructs",
   ],
