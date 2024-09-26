@@ -1,12 +1,14 @@
 import fs from "fs";
 import path from "path";
 import { cdk, javascript } from "projen";
+import { NpmAccess } from "projen/lib/javascript";
 
 const DOCS_ROOT = "docs";
 
 const project = new cdk.JsiiProject({
   author: "DeadlySquad13",
   authorAddress: "46250621+DeadlySquad13@users.noreply.github.com",
+  npmAccess: NpmAccess.PUBLIC,
   name: "@dsomega-boostrap/projen",
   packageName: "@dsomega-boostrap/projen" /* The "name" in package.json. */,
   repositoryUrl:
